@@ -1,12 +1,7 @@
 ### 项目说明
 - renren-security是一个轻量级的，前后端分离的Java快速开发平台，能快速开发项目并交付【接私活利器】
 - 采用SpringBoot、Shiro、MyBatis-Plus、Vue3、TypeScript、Element Plus、Vue Router、Pinia、Axios、Vite框架，开发的一套权限系统，极低门槛，拿来即用。设计之初，就非常注重安全性，为企业系统保驾护航，让一切都变得如此简单。
-- 提供了代码生成器，只需编写30%左右代码，其余的代码交给系统自动生成，可快速完成开发任务
-
-
-
-### 具有如下特点
-- 友好的代码结构及注释，便于阅读及二次开发
+- 提供了代码生成器，只需及二次开发
 - 实现前后端分离，通过token进行数据交互，前端再也不用关注后端技术
 - 灵活的权限控制，可控制到页面或按钮，满足绝大部分的权限需求
 - 提供CrudService接口，对增删改查进行封装，代码更简洁
@@ -58,8 +53,6 @@ my_system
 │           ├─template 代码生成器模板（可增加或修改相应模板）
 │           ├─application.yml    全局配置文件
 │           └─generator.properties   代码生成器，配置文件
-│ 
-├─ui        Vue3前端工程
 ```
 
 **技术选型：**
@@ -85,7 +78,7 @@ my_system
 - 修改application-dev.yml文件，更新MySQL账号和密码
 - 在renren-security目录下，执行mvn clean install
 - Eclipse、IDEA运行AdminApplication.java，则可启动项目【renren-admin】
-- renren-admin访问路径：http://localhost:8080/renren-admin
-- swagger文档路径：http://localhost:8080/renren-admin/doc.html
+- renren-admin访问路径：http://localhost:8080/admin/
+- swagger文档路径：http://localhost:8080/admin/doc.html
 - 账号密码：admin/admin
 

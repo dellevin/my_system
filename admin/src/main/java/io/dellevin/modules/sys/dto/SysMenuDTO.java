@@ -54,8 +54,8 @@ public class SysMenuDTO extends TreeNode<SysMenuDTO> implements Serializable {
 	@Range(min=0, max=1, message = "{sysmenu.type.range}", groups = DefaultGroup.class)
 	private Integer menuType;
 
-	@ApiModelProperty(value = "类型  0：内部打开   1：外部打开")
-	@Range(min=0, max=1, message = " 0：内部打开   1：外部打开")
+	@ApiModelProperty(value = "类型  0：内部打开   1：外部打开   2:无需登录访问")
+	@Range(min=0, max=2, message = " 0：内部打开   1：外部打开   2:无需登录访问")
 	private Integer openStyle;
 
 	@ApiModelProperty(value = "菜单图标")
@@ -164,4 +164,6 @@ public class SysMenuDTO extends TreeNode<SysMenuDTO> implements Serializable {
 	public void setParentName(String parentName) {
 		this.parentName = parentName;
 	}
+
+
 }

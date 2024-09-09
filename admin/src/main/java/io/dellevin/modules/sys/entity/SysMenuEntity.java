@@ -12,6 +12,7 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.dellevin.common.entity.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -75,5 +76,6 @@ public class SysMenuEntity extends BaseEntity {
 	 */
 	@TableField(exist = false)
 	private String parentName;
+
 
 }
