@@ -15,7 +15,14 @@
 			<artifactId>common</artifactId>
 			<version>5.3.0</version>
 		</dependency>
+		<!--	引入ip2region依赖-->
+		<dependency>
+			<groupId>org.lionsoul</groupId>
+			<artifactId>ip2region</artifactId>
+			<version>2.7.0</version>
+		</dependency>
 	</dependencies>
+
 
 	<build>
 		<finalName>${project.artifactId}</finalName>

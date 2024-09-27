@@ -24,6 +24,7 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -64,6 +65,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
         converters.add(jackson2HttpMessageConverter());
     }
 
+
     @Bean
     public MappingJackson2HttpMessageConverter jackson2HttpMessageConverter() {
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
@@ -83,4 +85,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
         converter.setObjectMapper(mapper);
         return converter;
     }
+
+
 }

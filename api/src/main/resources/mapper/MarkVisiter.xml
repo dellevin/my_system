@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.dellevin.dao.MarkVisiterDao">
+
+    <!-- 插入访问记录 -->
+    <insert id="insertVisitRecord" parameterType="io.dellevin.entity.MarkVisiterEntity">
+        INSERT INTO `mark_visiter`
+            ( `visit_url`, `visit_url_child`,`ip`, `ip_addr`, `create_time`)
+        VALUES
+            (
+                 #{visitUrl},#{visitUrlChild}, #{ip}, #{ipAddr}, NOW()
+            )
+    </insert>
+
+</mapper>
